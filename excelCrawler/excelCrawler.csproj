@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcelFileSearch.cs" />
+    <Compile Include="ExcelReaderHelper.cs" />
+    <Compile Include="IManagementBoardExcel.cs" />
+    <Compile Include="InsertEntity.cs" />
+    <Compile Include="Mambo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

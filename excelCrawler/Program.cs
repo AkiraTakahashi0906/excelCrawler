@@ -13,13 +13,18 @@ namespace excelCrawler
             var targetPath = @"C:\Users\akira\OneDrive\デスクトップ\C#\asynchronous_study";
             try
             {
-                ExcelFileSearch.GetFileName(targetPath);
-            }
+                var fileList = ExcelFileSearch.GetFileName(targetPath);
+				foreach (var file in fileList)
+				{
+					var dataTable = ExcelReaderHelper.Query(file);
+				}
+			}
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
             Console.ReadKey();
-        }
+
+		}
     }
 }
